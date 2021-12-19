@@ -1,0 +1,11 @@
+  applications:
+  - name: onlinecourse
+    routes:
+      - route: online-course-c8a.eu-gb.mybluemix.net
+    memory: 128M
+    buildpack: python_buildpack
+  - name: onlinecourse-nginx
+    routes:
+      - route: online-course-c8a.eu-gb.mybluemix.net/static
+    memory: 128M
+    buildpack: staticfile_buildpack
